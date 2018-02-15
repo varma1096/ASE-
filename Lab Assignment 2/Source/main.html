@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JustWatch</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+<script src="js/Translate.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="js/YoutubeData.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=init"></script>
+<body ng-app="Translate">
+<header class="header" id="top">
+<div class="container">
+    <div class="row">
+        <div class="search-text">
+            <h3>Search for to JustWatch the top trending videos</h3>
+        </div>
+    </div>
+        <div>
+            <p align="center">
+            <div ng-controller="Translatecontroller" align="center">
+            <form action="#">
+                <input id="justwatchkeyword" type="text"  maxlength="60" placeholder="Enter Key Word to search" />
+                <button type="submit" class="btn btn-primary btn-sm" >Search</button>
+                    <select name="language" id="lang" style="width: 150px;height: 37px">
+                    <option name="default" value="en">Select</option>
+
+                    <option value="te">Telugu</option>
+                    <option value="hi">Hindi</option>
+
+                </select>
+            </form>
+                <button class="btn btn-primary btn-sm" ng-click="translate()" >Translator</button>
+                <a href="index.html" class="btn btn-primary btn-sm" >Logout</a>
+
+
+            <div class="col1">
+                <h4>The translated word is :{{translatorWord}}</h4>
+            </div>
+                </div>
+            </p>
+            <div class="" id="results"></div>
+    </div>
+
+</div>
+</header>
+</body>
+</html>
