@@ -41,7 +41,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Location location = null;
         // Add a marker in UMKC and move the camera
         LatLng schoolofeducation = new LatLng(location.getLatitude(),location.getLongitude());
-        mMap.addMarker(new MarkerOptions().position(schoolofeducation).title("Marker in schoolofeducation"));
+        mMap.addMarker(new MarkerOptions().position(schoolofeducation).title("Marker in ASE class"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(schoolofeducation));
     }
 }
